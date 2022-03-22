@@ -2,6 +2,7 @@
 
 //import Todo from "./components/Todo";
 import { Route, Routes } from "react-router-dom";
+import MainNavigation from "./components/layout/MainNavigation";
 import AllMeetups from "./pages/AllMeetups";
 import Favorites from "./pages/Favorites";
 import NewMeetups from "./pages/NewMeetups";
@@ -9,6 +10,7 @@ import NewMeetups from "./pages/NewMeetups";
 function App() {
   return (
   <div>
+    <MainNavigation />
     <Routes>
     <Route path="/" element={<AllMeetups/>}/>
     <Route path="/new-meetups" element={<NewMeetups/>}/>
